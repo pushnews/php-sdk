@@ -67,6 +67,7 @@ class ApiResponse implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'success' => 'bool',
+        'message' => 'string',
         'data' => 'object'
     ];
 
@@ -81,6 +82,7 @@ class ApiResponse implements ArrayAccess
      */
     protected static $attributeMap = [
         'success' => 'success',
+        'message' => 'message',
         'data' => 'data'
     ];
 
@@ -91,6 +93,7 @@ class ApiResponse implements ArrayAccess
      */
     protected static $setters = [
         'success' => 'setSuccess',
+        'message' => 'setMessage',
         'data' => 'setData'
     ];
 
@@ -101,6 +104,7 @@ class ApiResponse implements ArrayAccess
      */
     protected static $getters = [
         'success' => 'getSuccess',
+        'message' => 'getMessage',
         'data' => 'getData'
     ];
 
@@ -136,6 +140,7 @@ class ApiResponse implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['success'] = isset($data['success']) ? $data['success'] : null;
+        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
         $this->container['data'] = isset($data['data']) ? $data['data'] : null;
     }
 
@@ -179,6 +184,27 @@ class ApiResponse implements ArrayAccess
     public function setSuccess($success)
     {
         $this->container['success'] = $success;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
+     * @return string
+     */
+    public function getMessage()
+    {
+        return $this->container['message'];
+    }
+
+    /**
+     * Sets message
+     * @param string $message
+     * @return $this
+     */
+    public function setMessage($message)
+    {
+        $this->container['message'] = $message;
 
         return $this;
     }
