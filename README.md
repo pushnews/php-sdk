@@ -1,1 +1,0 @@
-# pushnews-api-client-php
