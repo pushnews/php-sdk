@@ -58,8 +58,8 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiToken = '6ef2c7d1d434b898fc74412b636387ecc7d44c40';
-$siteId = "0d224a02-690f-4ef1-bb47-07da9bac326c"; // sample site
+$apiToken = '6ef2c7d1d434b898fc74412b636387ecc7d44c40'; // demo api token (replace with yours)
+$siteId = "0d224a02-690f-4ef1-bb47-07da9bac326c"; // demo site (replace with yours)
 
 // Configure API key authorization: ApiKeyAuth
 Pushnews\Configuration::getDefaultConfiguration()->setApiKey('X-Auth-Token', $apiToken);
