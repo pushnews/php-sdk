@@ -66,6 +66,7 @@ class Notification implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        'subscriberId' => 'string',
         'message' => '\Pushnews\Model\Message'
     ];
 
@@ -79,6 +80,7 @@ class Notification implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        'subscriberId' => 'subscriberId',
         'message' => 'message'
     ];
 
@@ -88,6 +90,7 @@ class Notification implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        'subscriberId' => 'setSubscriberId',
         'message' => 'setMessage'
     ];
 
@@ -97,6 +100,7 @@ class Notification implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        'subscriberId' => 'getSubscriberId',
         'message' => 'getMessage'
     ];
 
@@ -131,6 +135,7 @@ class Notification implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['subscriberId'] = isset($data['subscriberId']) ? $data['subscriberId'] : null;
         $this->container['message'] = isset($data['message']) ? $data['message'] : null;
     }
 
@@ -162,6 +167,27 @@ class Notification implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets subscriberId
+     * @return string
+     */
+    public function getSubscriberId()
+    {
+        return $this->container['subscriberId'];
+    }
+
+    /**
+     * Sets subscriberId
+     * @param string $subscriberId
+     * @return $this
+     */
+    public function setSubscriberId($subscriberId)
+    {
+        $this->container['subscriberId'] = $subscriberId;
+
+        return $this;
+    }
 
     /**
      * Gets message

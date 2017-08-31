@@ -96,6 +96,14 @@ class NotificationTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "subscriberId"
+     */
+    public function testPropertySubscriberId()
+    {
+
+    }
+
+    /**
      * Test attribute "message"
      */
     public function testPropertyMessage()
