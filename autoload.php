@@ -27,7 +27,7 @@
  *
  * After registering this autoload function with SPL, the following line
  * would cause the function to attempt to load the \Swagger\Client\Baz\Qux class
- * from /path/to/project//Baz/Qux.php:
+ * from /path/to/project/src//Baz/Qux.php:
  *
  *      new \Swagger\Client\Baz\Qux;
  *
@@ -41,7 +41,7 @@ spl_autoload_register(function ($class) {
     $prefix = 'Swagger\\Client\\';
 
     // base directory for the namespace prefix
-    $base_dir = __DIR__ . '//';
+    $base_dir = __DIR__ . '/src//';
 
     // does the class use the namespace prefix?
     $len = strlen($prefix);

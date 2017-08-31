@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pushSend**
-> \\ApiResponse pushSend($site_id, $body)
+> \\ApiResponse pushSend($siteId, $body)
 
 Send a Push Notification
 
@@ -23,11 +23,11 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Auth-Token
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Auth-Token', 'Bearer');
 
 $api_instance = new Swagger\Client\Api\PushApi();
-$site_id = "site_id_example"; // string | Site ID
+$siteId = "siteId_example"; // string | Site ID
 $body = new \\Notification(); // \\Notification | Notification object
 
 try {
-    $result = $api_instance->pushSend($site_id, $body);
+    $result = $api_instance->pushSend($siteId, $body);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling PushApi->pushSend: ', $e->getMessage(), PHP_EOL;
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **site_id** | **string**| Site ID |
+ **siteId** | **string**| Site ID |
  **body** | [**\\Notification**](../Model/\\Notification.md)| Notification object |
 
 ### Return type

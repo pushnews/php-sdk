@@ -1,6 +1,6 @@
 {
     "name": "/",
-    "version": "",
+    "version": "1.0.0",
     "description": "",
     "keywords": [
         "swagger",
@@ -29,7 +29,7 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Swagger\\Client\\" : "/" }
+        "psr-4": { "Swagger\\Client\\" : "src//" }
     },
     "autoload-dev": {
         "psr-4": { "Swagger\\Client\\" : "test/" }
