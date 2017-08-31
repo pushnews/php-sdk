@@ -59,11 +59,11 @@ Please follow the [installation procedure](#installation--usage) and then run th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: ApiKeyAuth
-Pushnews\Push\Configuration::getDefaultConfiguration()->setApiKey('X-Auth-Token', 'YOUR_API_KEY');
+Pushnews\Configuration::getDefaultConfiguration()->setApiKey('X-Auth-Token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// Pushnews\Push\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Auth-Token', 'Bearer');
+// Pushnews\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-Auth-Token', 'Bearer');
 
-$api_instance = new Pushnews\Push\Api\PushApi();
+$api_instance = new Pushnews\Api\PushApi();
 $siteId = "siteId_example"; // string | Site ID
 $body = new \Pushnews\Model\Notification(); // \Pushnews\Model\Notification | Notification object
 

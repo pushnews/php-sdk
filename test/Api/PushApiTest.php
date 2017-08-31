@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Pushnews\Push
+ * @package  Pushnews
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -38,18 +38,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Pushnews\Push;
+namespace Pushnews;
 
-use \Pushnews\Push\Configuration;
-use \Pushnews\Push\ApiClient;
-use \Pushnews\Push\ApiException;
-use \Pushnews\Push\ObjectSerializer;
+use \Pushnews\Configuration;
+use \Pushnews\ApiClient;
+use \Pushnews\ApiException;
+use \Pushnews\ObjectSerializer;
 
 /**
  * PushApiTest Class Doc Comment
  *
  * @category Class
- * @package  Pushnews\Push
+ * @package  Pushnews
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen

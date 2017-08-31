@@ -14,8 +14,8 @@
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src/Pushnews</directory>
-            <directory suffix=".php">./src/Pushnews/Model</directory>
+            <directory suffix=".php">./src</directory>
+            <directory suffix=".php">./src/Model</directory>
         </whitelist>
     </filter>
 </phpunit>

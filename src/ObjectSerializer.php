@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Pushnews\Push
+ * @package  Pushnews
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,13 +39,13 @@
  * Do not edit the class manually.
  */
 
-namespace Pushnews\Push;
+namespace Pushnews;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  Pushnews\Push
+ * @package  Pushnews
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -285,7 +285,7 @@ class ObjectSerializer
         } else {
             // If a discriminator is defined and points to a valid subclass, use it.
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\Pushnews\Push\Model\\' . $data->{$discriminator};
+                $subclass = '\Pushnews\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Pushnews\\Push\\" : "src//" }
+        "psr-4": { "Pushnews\\" : "src//" }
     },
     "autoload-dev": {
-        "psr-4": { "Pushnews\\Push\\" : "test/" }
+        "psr-4": { "Pushnews\\" : "test/" }
     }
 }

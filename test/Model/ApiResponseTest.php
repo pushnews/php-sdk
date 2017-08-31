@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Pushnews\Push
+ * @package  Pushnews
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Pushnews\Push;
+namespace Pushnews;
 
 /**
  * ApiResponseTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace Pushnews\Push;
  * @category    Class */
 // * @description ApiResponse
 /**
- * @package     Pushnews\Push
+ * @package     Pushnews
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen
