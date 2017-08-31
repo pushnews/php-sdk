@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **pushSend**
-> \Pushnews\ApiResponse pushSend($siteId, $body)
+> \\ApiResponse pushSend($siteId, $body)
 
 Send a Push Notification
 
@@ -24,7 +24,7 @@ Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-Auth-Token
 
 $api_instance = new Swagger\Client\Api\PushApi();
 $siteId = "siteId_example"; // string | Site ID
-$body = new \Pushnews\Notification(); // \Pushnews\Notification | Notification object
+$body = new \\Notification(); // \\Notification | Notification object
 
 try {
     $result = $api_instance->pushSend($siteId, $body);
@@ -40,11 +40,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **siteId** | **string**| Site ID |
- **body** | [**\Pushnews\Notification**](../Model/\Pushnews\Notification.md)| Notification object |
+ **body** | [**\\Notification**](../Model/\\Notification.md)| Notification object |
 
 ### Return type
 
-[**\Pushnews\ApiResponse**](../Model/ApiResponse.md)
+[**\\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
