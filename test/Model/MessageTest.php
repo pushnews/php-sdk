@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Pushnews\Push
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -39,7 +39,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Swagger\Client;
+namespace Pushnews\Push;
 
 /**
  * MessageTest Class Doc Comment
@@ -47,7 +47,7 @@ namespace Swagger\Client;
  * @category    Class */
 // * @description Message
 /**
- * @package     Swagger\Client
+ * @package     Pushnews\Push
  * @author      http://github.com/swagger-api/swagger-codegen
  * @license     http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link        https://github.com/swagger-api/swagger-codegen

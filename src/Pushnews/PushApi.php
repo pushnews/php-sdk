@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Pushnews\Push
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -40,16 +40,16 @@
 
 namespace Pushnews;
 
-use \Swagger\Client\ApiClient;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ObjectSerializer;
+use \Pushnews\Push\ApiClient;
+use \Pushnews\Push\ApiException;
+use \Pushnews\Push\Configuration;
+use \Pushnews\Push\ObjectSerializer;
 
 /**
  * PushApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Pushnews\Push
  * @author   http://github.com/swagger-api/swagger-codegen
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache License v2
  * @link     https://github.com/swagger-api/swagger-codegen
@@ -59,16 +59,16 @@ class PushApi
     /**
      * API Client
      *
-     * @var \Swagger\Client\ApiClient instance of the ApiClient
+     * @var \Pushnews\Push\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \Swagger\Client\ApiClient|null $apiClient The api client to use
+     * @param \Pushnews\Push\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\Swagger\Client\ApiClient $apiClient = null)
+    public function __construct(\Pushnews\Push\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -81,7 +81,7 @@ class PushApi
     /**
      * Get API client
      *
-     * @return \Swagger\Client\ApiClient get the API client
+     * @return \Pushnews\Push\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -91,11 +91,11 @@ class PushApi
     /**
      * Set the API client
      *
-     * @param \Swagger\Client\ApiClient $apiClient set the API client
+     * @param \Pushnews\Push\ApiClient $apiClient set the API client
      *
      * @return PushApi
      */
-    public function setApiClient(\Swagger\Client\ApiClient $apiClient)
+    public function setApiClient(\Pushnews\Push\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -107,9 +107,9 @@ class PushApi
      * Send a Push Notification
      *
      * @param string $siteId Site ID (required)
-     * @param \\Notification $body Notification object (required)
-     * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \\ApiResponse
+     * @param \Pushnews\Model\Notification $body Notification object (required)
+     * @throws \Pushnews\Push\ApiException on non-2xx response
+     * @return \Pushnews\Model\ApiResponse
      */
     public function pushSend($siteId, $body)
     {
@@ -123,9 +123,9 @@ class PushApi
      * Send a Push Notification
      *
      * @param string $siteId Site ID (required)
-     * @param \\Notification $body Notification object (required)
-     * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \Pushnews\Model\Notification $body Notification object (required)
+     * @throws \Pushnews\Push\ApiException on non-2xx response
+     * @return array of \Pushnews\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushSendWithHttpInfo($siteId, $body)
     {
@@ -185,15 +185,15 @@ class PushApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\\ApiResponse',
+                '\Pushnews\Model\ApiResponse',
                 '/push/{siteId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Pushnews\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Pushnews\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
